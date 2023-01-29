@@ -5,8 +5,9 @@
 	let equals = document.querySelector('.equal');
 	let oc = document.querySelector('.oc');
 	let per = document.querySelector('.per');
-	let yes = document.getElementById('yes');
-	let no = document.querySelector('.no');
+	let dev =  document.querySelector('.dev');
+	let mul =  document.querySelector('.mul');
+	let add =  document.querySelector('.add');
 	let value;
 
 	if(screen.value === ''){
@@ -44,6 +45,22 @@
 		screen.value = pers;
 
 		if(screen.value === "NaN*"){
+			screen.value = "";
+		}
+	});
+
+	dev.addEventListener('click', function(e){
+		if(screen.value === "/"){
+			screen.value = "";
+		}
+	});
+	mul.addEventListener('click', function(e){
+		if(screen.value === "*"){
+			screen.value = "";
+		}
+	});
+	add.addEventListener('click', function(e){
+		if(screen.value === "+"){
 			screen.value = "";
 		}
 	});

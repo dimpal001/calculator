@@ -7,6 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="con">
+		<div class="head">
+			<h2>Calculator</h2>
+		</div>
 	<div class="container">
 		<div class="screen">
 			<input type="text" class="input" placeholder="0">
@@ -19,13 +23,13 @@
 				<button class="a row o c clear" type="button">C</button>
 				<button class="row o c oc no" id="yes" type="button"><</button>
 				<button class="row o num op per no" type="button" id="yes">%</button>
-				<button class="a row o num op no" type="button" id="yes" data-num="/">/</button>
+				<button class="a row o num op dev" type="button" id="yes" data-num="/">/</button>
 		</div>
 		<div class="row">
 			<button class="a row t num" type="button" data-num="7">7</button>
 			<button class="a row t num" type="button" data-num="8">8</button>
 			<button class="a row t num" type="button" data-num="9">9</button>
-			<button class="a row t num op no" type="button" data-num="*" id="yes">x</button>
+			<button class="a row t num op mul" type="button" data-num="*" id="yes">x</button>
 		</div>
 		<div class="row">
 			<button class="a row th num" type="button" data-num="4">4</button>
@@ -37,7 +41,7 @@
 			<button class="a row f num" type="button" data-num="1">1</button>
 			<button class="a row f num" type="button" data-num="2">2</button>
 			<button class="a row f num" type="button" data-num="3">3</button>
-			<button class="a row f num op no" type="button" data-num="+" id="yes">+</button>
+			<button class="a row f num op add" type="button" data-num="+" id="yes">+</button>
 		</div>
 		<div class="row">
 			<button class="a row ff num" type="button" data-num="00">00</button>
@@ -46,6 +50,11 @@
 			<button class="row equal ff" type="button">=</button>
 		</div>
 		</div>
+	</div>
+	<div class="footer">
+		<img src="./fc.png" class="imga fc">
+		<img src="./in.png" class="imga in">
+	</div>
 	</div>
 	<script type="text/javascript" src="formula.js"></script>
 

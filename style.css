@@ -1,8 +1,20 @@
+.con{
+	width: 350px;
+	height: 650px;
+	justify-content: space-around;
+	margin: auto;
+}
+.head{
+	text-align: center;
+	font-family: monospace;
+	font-size: 16px;
+	font-weight: bold;
+}
 .container{
 	border-radius: 15px;
 	width: 350px;
 	height: 500px;
-	background: darkgray;
+	background: rgb(51, 51, 51);
 	justify-content: space-around;
 	margin: auto;
 }
@@ -57,6 +69,7 @@
 	border: 1px solid green;
 }
 button:hover{
+	box-shadow: 0 0 15px white;
 	background: black;
 	color: white;
 	border: 1px solid black;
@@ -72,4 +85,16 @@ button:hover{
 
 .oc:click{
 	display: flex;
+}
+.footer{
+	margin: auto;
+	justify-content: space-around;
+	display: flex;
+	padding: 10px;
+}
+.imga{
+	width: 80px;
+}
+.in{
+	width: 55px;
 }
