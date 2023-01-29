@@ -1,0 +1,75 @@
+.container{
+	border-radius: 15px;
+	width: 350px;
+	height: 500px;
+	background: darkgray;
+	justify-content: space-around;
+	margin: auto;
+}
+.screen{
+	border-radius: 15px;
+	width: 100%;
+	height: 25%;
+	background: black;
+	text-align: center;
+	pointer-events: none;
+}
+.row{
+	margin: 5px;
+	font: 15px arial black;
+	justify-content: space-around;
+	display: flex;
+}
+.buttons{
+	margin: 15px;
+	margin-top: 25px;
+}
+.o, .t, .th, .f, .ff{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	float: left;
+	align-items: center;
+	font-weight: bold;
+	background: lightblue;
+	border: 1px solid lightblue;
+	font-size: 20px;
+}
+.input{
+	height: 90%;
+	width: 90%;
+	text-align: right;
+	background: black;
+	border: none;
+	color: white;
+	font-size: 40px;
+}
+.op{
+	background: darkorange;
+	border: 1px solid darkorange;
+}
+.c{
+	background: red;
+	border: 1px solid red;
+}
+.equal{
+	background: green;
+	border: 1px solid green;
+}
+button:hover{
+	background: black;
+	color: white;
+	border: 1px solid black;
+}
+.equal:hover{
+	background: darkgreen;
+	border: 1px solid darkgreen;
+}
+
+.pop{
+	display: none;
+}
+
+.oc:click{
+	display: flex;
+}
