@@ -99,3 +99,10 @@ button:hover{
 .in{
 	width: 55px;
 }
+
+@media screen and (max-width: 500px){
+	.head{
+		padding-top: 30px;
+	}
+
+}
