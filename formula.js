@@ -8,6 +8,7 @@
 	let dev =  document.querySelector('.dev');
 	let mul =  document.querySelector('.mul');
 	let add =  document.querySelector('.add');
+	let sub =  document.querySelector('.sub');
 	let value;
 
 	if(screen.value === ''){
@@ -64,7 +65,12 @@
 			screen.value = "";
 		}
 	});
-	
-	
+	sub.addEventListener('click', function(e){
+		
+			if(e.target.dataset.num === "-"){
+				e.target.dataset.num = "";
+			}
+			e.remove();
+	});
 
 })();
