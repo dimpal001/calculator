@@ -79,7 +79,9 @@ button:hover{
 	background: darkgreen;
 	border: 1px solid darkgreen;
 }
-
+.bs:hover{
+	background: red;
+}
 .pop{
 	display: none;
 }
