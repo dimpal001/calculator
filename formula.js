@@ -9,6 +9,7 @@
 	let mul =  document.querySelector('.mul');
 	let add =  document.querySelector('.add');
 	let sub =  document.querySelector('.sub');
+	let bs =  document.querySelector('.bs');
 	let value;
 
 	if(screen.value === ''){
@@ -19,8 +20,18 @@
 
 	buttons.forEach(function(button){
 		button.addEventListener('click', function(e){
-			value = e.target.dataset.num;
-			screen.value += value;
+			if(e.target.dataset.op === undefined){
+				value = e.target.dataset.num;
+				screen.value += value;
+			}
+			else if(e.target.dataset.num === undefined){
+				if(value === "/"||value === "+"||value === "-"||value === "*"||value === "%"){
+				}else{
+					value = e.target.dataset.op;
+					screen.value += value;
+				}
+			}
+			
 		})
 	});
 
@@ -35,10 +46,6 @@
 
 	clear.addEventListener('click', function(e){
 		screen.value = "";
-	});
-
-	oc.addEventListener('click', function(e){
-		alert("No function is added on this button");
 	});
 
 	per.addEventListener('click', function(e){
@@ -65,12 +72,11 @@
 			screen.value = "";
 		}
 	});
-	sub.addEventListener('click', function(e){
-		
-			if(e.target.dataset.num === "-"){
-				e.target.dataset.num = "";
-			}
-			e.remove();
-	});
+
+	bs.addEventListener('click', function(e){
+		let arr = (screen.value).split("");
+		arr.pop();
+		screen.value = arr.join("");
+	})
 
 })();
