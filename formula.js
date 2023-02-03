@@ -40,6 +40,7 @@
 			screen.value = "";
 		}else{
 			let ans = eval(screen.value);
+			ans = ans.toFixed(3);
 			screen.value = ans;
 		}
 	});
